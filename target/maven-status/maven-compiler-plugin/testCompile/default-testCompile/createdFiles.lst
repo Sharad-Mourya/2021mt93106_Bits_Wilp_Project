@@ -1,0 +1,16 @@
+pages\CreateContactPage.class
+stepDefinitions\LoginSteps.class
+stepDefinitions\RegistrationSteps.class
+pages\SalesforceHomePage.class
+pages\LoginPage.class
+pages\HomePage.class
+runners\TestRunner.class
+stepDefinitions\HomePageSteps.class
+util\PropertyReader.class
+stepDefinitions\SalesforceLoginSteps.class
+pages\RegistrationPage.class
+stepDefinitions\BaseSteps.class
+stepDefinitions\CreateContactSteps.class
+pages\SalesforceLoginPage.class
+stepDefinitions\SalesforceHomePageSteps.class
+factory\DriverFactory.class
