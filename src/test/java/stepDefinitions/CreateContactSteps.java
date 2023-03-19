@@ -50,7 +50,6 @@ public class CreateContactSteps {
         createContactPage.createContact(firstName,lastName);
 
     }
-
     @And("clicks on Cancel")
     public void clicksOnCancel() {
         createContactPage.cancelContact();

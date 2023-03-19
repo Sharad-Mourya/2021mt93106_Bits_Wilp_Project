@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 import factory.DriverFactory;
-import pages.HomePage;
 import util.PropertyReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -16,7 +15,6 @@ public class BaseSteps {
     private WebDriver driver;
     private Properties prop;
     private DriverFactory driverFactory;
-    private HomePage homePage;
 
     @Before
     public void setup() {
