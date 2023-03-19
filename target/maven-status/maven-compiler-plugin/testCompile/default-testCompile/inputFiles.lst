@@ -1,8 +1,10 @@
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\BaseSteps.java
+C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\util\Waits.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\runners\TestRunner.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\util\PropertyReader.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\CreateContactPage.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\LoginPage.java
+C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\CreateAccountSteps.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\SalesforceHomePageSteps.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\RegistrationPage.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\SalesforceHomePage.java
@@ -12,5 +14,6 @@ C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinition
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\SalesforceLoginSteps.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\RegistrationSteps.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\factory\DriverFactory.java
+C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\CreateAccountPage.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\pages\SalesforceLoginPage.java
 C:\Users\DELL\IdeaProjects\2021mt93106_Bits_Project\src\test\java\stepDefinitions\HomePageSteps.java

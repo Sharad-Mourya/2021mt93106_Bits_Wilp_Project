@@ -2,6 +2,7 @@ package stepDefinitions;
 
 
 import factory.DriverFactory;
+import io.cucumber.java.en.And;
 import pages.LoginPage;
 import pages.RegistrationPage;
 import io.cucumber.java.en.Then;
@@ -30,4 +31,5 @@ public class RegistrationSteps {
         // in this dummy application, it simply navigates remains on the registration page
         Assert.assertTrue(registrationPage.isRegisterPageDisplayed(), "User got registered for invalid details.");
     }
+
 }

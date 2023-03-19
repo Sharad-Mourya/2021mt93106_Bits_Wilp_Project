@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"stepDefinitions"},
-        tags = ("@CreateContact"),
+        tags = ("@AllTests"),
         plugin = {"pretty",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "timeline:test-output-thread/"}

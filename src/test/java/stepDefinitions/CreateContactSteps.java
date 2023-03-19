@@ -35,11 +35,6 @@ public class CreateContactSteps {
         createContactPage.clickNew();
     }
 
-//    @And("enters (.*) and (.*)")
-//    public void entersFirstNameAndLastName(String fname,String lname) {
-//        createContactPage.createContact(fname,lname);
-//    }
-
     @And("clicks on Save")
     public void clicksOnSave() {
         createContactPage.saveContact();
@@ -54,5 +49,15 @@ public class CreateContactSteps {
     public void entersAnd(String firstName, String lastName) {
         createContactPage.createContact(firstName,lastName);
 
+    }
+
+    @And("clicks on Cancel")
+    public void clicksOnCancel() {
+        createContactPage.cancelContact();
+    }
+
+    @Then("New Contact is cancelled successfully")
+    public void newContactIsCancelledSuccessfully() {
+        System.out.println("Contact is cancelled successfully");
     }
 }

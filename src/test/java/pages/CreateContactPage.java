@@ -11,40 +11,45 @@ import java.time.LocalTime;
 public class CreateContactPage {
     // object repository for Contact page
 
-    @FindBy(xpath="//a[@title='Contacts Tab']")
+    @FindBy(xpath = "//a[@title='Contacts Tab']")
     private WebElement contactTabBtn;
-    @FindBy(xpath="//input[@title='New']")
+    @FindBy(xpath = "//input[@title='New']")
     private WebElement newBtn;
-    @FindBy(id="name_firstcon2")
+    @FindBy(id = "name_firstcon2")
     private WebElement fName;
-    @FindBy(id="name_lastcon2")
+    @FindBy(id = "name_lastcon2")
     private WebElement lName;
-    @FindBy(name="save")
+    @FindBy(name = "save")
     private WebElement saveBtn;
-
+    @FindBy(name = "cancel")
+    private WebElement cancel;
 
     private WebDriver driver;
 
-
-    public CreateContactPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+    public CreateContactPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
     }
 
-    public void clickContactsTab(){
+    public void clickContactsTab() {
         contactTabBtn.click();
     }
 
-    public void clickNew(){
+    public void clickNew() {
         newBtn.click();
     }
 
-    public void createContact(String firstName,String lastName){
-        String time=(LocalDate.now()+" "+LocalTime.now().getHour()+"-"+LocalTime.now().getMinute());
+    public void createContact(String firstName, String lastName) {
+        String time = (LocalDate.now() + " " + LocalTime.now().getHour() + "-" + LocalTime.now().getMinute());
         fName.sendKeys(firstName);
-        lName.sendKeys(lastName+time);
+        lName.sendKeys(lastName + time);
     }
-    public void saveContact(){
+
+    public void saveContact() {
         saveBtn.click();
+    }
+
+    public void cancelContact() {
+        cancel.click();
     }
 
 }
