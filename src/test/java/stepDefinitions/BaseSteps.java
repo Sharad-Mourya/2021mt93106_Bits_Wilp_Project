@@ -22,15 +22,15 @@ public class BaseSteps {
     public void setup() {
         // this method will run Before each Scenario
         prop = PropertyReader.getAllProperties();
-//        driverFactory = new DriverFactory();
-//        driver = driverFactory.initDriver(prop.getProperty("browser"));
+        driverFactory = new DriverFactory();
+        driver = driverFactory.initDriver(prop.getProperty("browser"));
 
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setHeadless(true);
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-setuid-sandbox");
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
-        driver = new ChromeDriver(chromeOptions);
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.setHeadless(true);
+//        chromeOptions.addArguments("--no-sandbox");
+//        chromeOptions.addArguments("--disable-setuid-sandbox");
+//        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
+//        driver = new ChromeDriver(chromeOptions);
         driver.get(prop.getProperty("salesforce_url_home"));
     }
     @After
