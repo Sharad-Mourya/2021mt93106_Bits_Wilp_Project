@@ -24,7 +24,7 @@ public class DriverFactory {
                 chromeOptions.setHeadless(true);
 //                chromeOptions.addArguments("--no-sandbox");
 //                chromeOptions.addArguments("--disable-setuid-sandbox");
-                System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");
                 tlDriver.set(new ChromeDriver(chromeOptions));
                 break;
             case "FIREFOX":
