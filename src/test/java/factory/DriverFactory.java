@@ -16,14 +16,15 @@ public class DriverFactory {
     public WebDriver initDriver(String browser) {
         browser = browser.toUpperCase();
         // use WebDriverManager to automatically setup driver of the browser
-        WebDriverManager.getInstance(DriverManagerType.valueOf(browser)).setup();
+//        WebDriverManager.getInstance(DriverManagerType.valueOf(browser)).setup();
         // launch appropriate browser
         switch (browser) {
             case "CHROME":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setHeadless(true);
-                chromeOptions.addArguments("--no-sandbox");
-                chromeOptions.addArguments("--disable-setuid-sandbox");
+//                chromeOptions.addArguments("--no-sandbox");
+//                chromeOptions.addArguments("--disable-setuid-sandbox");
+                System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver");
                 tlDriver.set(new ChromeDriver(chromeOptions));
                 break;
             case "FIREFOX":
