@@ -21,7 +21,7 @@ public class DriverFactory {
         switch (browser) {
             case "CHROME":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.setHeadless(false);
+                chromeOptions.setHeadless(true);
                 tlDriver.set(new ChromeDriver(chromeOptions));
                 break;
             case "FIREFOX":
