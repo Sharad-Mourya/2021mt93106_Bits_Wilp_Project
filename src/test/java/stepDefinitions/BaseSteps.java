@@ -27,8 +27,8 @@ public class BaseSteps {
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setHeadless(true);
-//                chromeOptions.addArguments("--no-sandbox");
-//                chromeOptions.addArguments("--disable-setuid-sandbox");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-setuid-sandbox");
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
         driver = new ChromeDriver(chromeOptions);
         driver.get(prop.getProperty("salesforce_url_home"));
