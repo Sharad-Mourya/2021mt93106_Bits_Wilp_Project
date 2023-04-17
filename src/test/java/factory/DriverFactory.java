@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -19,7 +20,9 @@ public class DriverFactory {
         // launch appropriate browser
         switch (browser) {
             case "CHROME":
-                tlDriver.set(new ChromeDriver());
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setHeadless(false);
+                tlDriver.set(new ChromeDriver(chromeOptions));
                 break;
             case "FIREFOX":
                 tlDriver.set(new FirefoxDriver());
