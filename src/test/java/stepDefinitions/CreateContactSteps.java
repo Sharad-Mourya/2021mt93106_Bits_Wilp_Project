@@ -59,4 +59,9 @@ public class CreateContactSteps {
     public void newContactIsCancelledSuccessfully() {
         System.out.println("Contact is cancelled successfully");
     }
+    
+    @Given("User perform Salesforce CICD scenario")
+    public void userPerformSalesforceCICDScenario() {
+        System.out.println("CICD Scenario Successful");
+    }
 }
