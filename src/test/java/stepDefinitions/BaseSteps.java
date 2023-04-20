@@ -18,31 +18,24 @@ public class BaseSteps {
     private Properties prop;
     private DriverFactory driverFactory;
 
-    @Before
-    public void setup() {
-        // this method will run Before each Scenario
-        prop = PropertyReader.getAllProperties();
-        driverFactory = new DriverFactory();
-        driver = driverFactory.initDriver(prop.getProperty("browser"));
-
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.setHeadless(true);
-//        chromeOptions.addArguments("--no-sandbox");
-//        chromeOptions.addArguments("--disable-setuid-sandbox");
-//        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver");
-//        driver = new ChromeDriver(chromeOptions);
-        driver.get(prop.getProperty("salesforce_url_home"));
-    }
-    @After
-    public void tearDown(Scenario scenario) {
-        // this method will run After each Scenario
-        if (scenario.isFailed()) {
-            // take screenshot:
-            String screenshotName = scenario.getName().replaceAll(" ", "_");
-            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", screenshotName);
-        }
-        PropertyReader.cleanUp();
-        driver.quit();
-    }
+//     @Before
+//     public void setup() {
+//         // this method will run Before each Scenario
+//         prop = PropertyReader.getAllProperties();
+//         driverFactory = new DriverFactory();
+//         driver = driverFactory.initDriver(prop.getProperty("browser"));
+//         driver.get(prop.getProperty("salesforce_url_home"));
+//     }
+//     @After
+//     public void tearDown(Scenario scenario) {
+//         // this method will run After each Scenario
+//         if (scenario.isFailed()) {
+//             // take screenshot:
+//             String screenshotName = scenario.getName().replaceAll(" ", "_");
+//             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//             scenario.attach(screenshot, "image/png", screenshotName);
+//         }
+//         PropertyReader.cleanUp();
+//         driver.quit();
+//     }
 }
