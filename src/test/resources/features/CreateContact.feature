@@ -23,3 +23,7 @@ Feature: User Creates Contact in Salesforce Application
     When User selects New
     And clicks on Cancel
     Then New Contact is cancelled successfully
+    
+   @SalesforceCICDScenario
+  Scenario: Salesforce CICD Scenario
+    Given User perform Salesforce CICD scenario   
